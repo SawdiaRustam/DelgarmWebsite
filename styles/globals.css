@@ -1,16 +1,88 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+body{
+    @apply bg-slate-200;
 }
+.animation{
+     
+    background: linear-gradient(135deg, #340158,#fa9005, #ff0d86);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: 800;
+     text-transform: capitalize;
+     animation: animate 2s linear infinite;
+  }
+  @keyframes animate{
+     100%{
+       transition:  ease 1s;
+       transform: rotate(60deg), scaleY(1.2);
+       filter: hue-rotate(360deg);
+     }
+   }
+   .bground{
+    /* background: linear-gradient(135deg,#FDE7EA, #D9DEEF); */
+    background: url("rectangle.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .radius{
+    padding: 10px;
+    border-radius: 10px 150px 20px 100px;
+    background-color: #fc8d77;
+ }
 
-* {
-  box-sizing: border-box;
+ .buttonBackground{
+    background: linear-gradient(135deg,#4B0082, #fc8d77,#3378ff);
+    animation: rotate 4s ease-in-out infinite ;
+ }
+ @keyframes rotate {
+   100% {
+       background: linear-gradient(135deg,#4B0082, #c15cff,#fc8d77);
+       transition:  ease-in-out 4s;
+       filter: hue-rotate(-360deg);
+       
+    }
+    
+ }
+
+ .blueBg{
+   background: url("bg.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+.caption{
+   position: absolute;
+   top:0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+   padding: 20px 20px;
+   text-align: center;
+   background: rgba(0, 0, 0, 0.3);
+   transition: ease 1.5s;
+   color: aliceblue;
+}
+.contain:hover .caption{
+   
+   left: 0;
+}
+.second{
+   position: absolute;
+   top:-100%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   padding: 20px 20px;
+   text-align: center;
+   background: rgba(0, 0, 0, 0.5);
+   transition: ease 1.5s;
+   color: aliceblue;  
+}
+.contain:hover .second{
+ top: 0;
 }
