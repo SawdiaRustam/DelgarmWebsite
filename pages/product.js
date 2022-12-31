@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Layout from '../src/common/layout/Layout';
 import { card_menu } from '../src/components/constants/cardMenu';
 import CardMenu from '../src/components/elements/CardMenu';
+
 const product=() => {
   const [input, setInput]=useState(" ");
 
@@ -26,7 +27,11 @@ const product=() => {
         </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 my-10 gap-10'>
+   
+     
+    
         <CardMenu />
+      
       </div>
     </Layout>
   )

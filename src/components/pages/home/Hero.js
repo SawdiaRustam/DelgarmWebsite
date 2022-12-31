@@ -10,7 +10,7 @@ const Hero = () => {
     </div>
     <div className='  flex justify-center'>
          <div className=' mt-2 relative'>
-          <img className=' w-full' src='./images/hero.png'/>
+          <img className=' w-full h-1/2' src='./images/hero.png'/>
            <div className='absolute top-5 sm:top-16 md:top-1/3 text-center left-5 sm:left-10 md:left-20 lg:left-32'>
             <h1 className=' text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold px-5 text-white shadow-xl'>لورم ایپسوم متن ساختکی با تولید سادگی</h1>
             <h1 className='text-white md:font-bold px-5 pt-10'> چاپگرها و متون بلکه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</h1>

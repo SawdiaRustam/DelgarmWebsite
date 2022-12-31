@@ -19,7 +19,7 @@ const CardMenu=() => {
             </div>
             <div>
               <Link href={"./details"}><a href='./details'>
-                <button className='buttonBackground hover:text-gray-800 px-5  py-1   text-sm my-3 text-white rounded-md'> جزییات بیشتر</button>
+                <button className='buttonBackground hover:text-gray-800 px-5  py-1  text-sm my-3 text-white rounded-md'> جزییات بیشتر</button>
               </a></Link>
             </div>
           </div>
